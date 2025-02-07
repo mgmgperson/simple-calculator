@@ -20,6 +20,7 @@ app.post("/calculate", (req, res) => {
   try {
     // Evaluate the expression
     const result = eval(expression); // Use eval carefully; validate input in production
+    console.log('Calculating...');
     console.log('Expression:', expression);
     console.log('Result:', result);
     res.json({ result });
